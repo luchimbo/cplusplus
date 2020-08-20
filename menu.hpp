@@ -23,23 +23,42 @@ typedef struct lapicera{
 	int cantidad = DEF_CANTIDAD;
 }lapicera_t;
 
-
+/*Pre:-.
+ *Post: Muestra el menu, recibe la opcion ingresada y devuelve el valor de "opcion_rec"
+*/
 int mostrar_menu();
 
+/*Pre:-.
+ *Post: recibe si tiene tinta en "tinta_recib" y lo retorna
+*/
 bool opc_modificar_tinta();
-
+/*Pre:-.
+ *Post: recibe un nuevo color en "color_recib" y lo retorna
+*/
 string opc_modificar_color();
-
+/*Pre:-.
+ *Post: recibe un nuevo numero de lapiceras en "cant_lap_recib" y lo retorna
+*/
 int opc_modificar_cant_lap();
-
+/*Pre:-.
+ *Post: Muestra el color de "lapicera"
+*/
 void opc_mostrar_color(lapicera_t lapicera);
-
+/*Pre:-.
+ *Post: Muestra si tiene tinta de "lapicera"
+*/
 void opc_mostrar_tinta(lapicera_t lapicera);
-
+/*Pre:-.
+ *Post: Muestra la cantidad de lapiceras de "lapicera"
+*/
 void opc_mostrar_cant_lap(lapicera_t lapicera);
-
+/* Pre: "opcion_eleg" actualizado
+ * Post: realiza la "opcion_eleg" y retorna "lapicera"
+*/
 lapicera_t ejecutar_opcion(int opcion_eleg, lapicera_t lapicera);
-
+/*pre:-.
+ *post: inicia el programa y termina con la opcion "OPC_SALIR"
+*/
 void iniciar_programa();
 
 
